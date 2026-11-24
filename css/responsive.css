@@ -1,0 +1,65 @@
+/* Adaptación a tablet y móvil */
+@media (max-width:980px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .detail{grid-template-columns:1fr;gap:40px}
+  .book{position:static}
+  .burger{display:flex;order:3}
+  .header__cta{order:2;margin-left:auto;padding:11px 18px}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--coal);border-top:1px solid #333;box-shadow:0 14px 24px rgba(0,0,0,.35)}
+  .nav.open{display:flex}
+  .nav a{padding:16px 24px;border-bottom:1px solid #2c2c2c;font-size:15px}
+}
+@media (max-width:620px){
+  .grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr;height:300px}
+  .gallery img:nth-child(n+2){display:none}
+  .amen{grid-template-columns:1fr 1fr}
+  .footer__grid{grid-template-columns:1fr}
+  .topbar__in{gap:8px 20px}
+}
+ 
+/* ---- Panel de reserva en móvil ---- */
+.detail > *{min-width:0}                 /* evita que el contenido ensanche la columna y desborde */
+.book select{text-overflow:ellipsis}
+.book input[type=date]{min-width:0;-webkit-appearance:none;appearance:none;min-height:44px}
+@media (max-width:620px){
+  .container{padding:0 16px}
+  .gallery{margin:0 -16px}
+  .detail{margin-top:40px;gap:32px}
+  .detail h1{font-size:34px}
+  .detail h3{font-size:24px;margin-top:30px}
+  .more h2{font-size:34px}
+  .book{padding:22px 18px;margin:0 -4px}
+  .book__head{flex-direction:column;align-items:flex-start;gap:4px}
+  .row2{gap:12px}
+  .book input[type=date],.book select{font-size:16px;padding:10px 6px}  /* 16px evita el zoom automático en iOS */
+  .step{gap:8px}
+  .step button{width:36px;height:36px}  /* área táctil cómoda */
+  .book .extra{font-size:14px;padding:10px 0;gap:10px;align-items:flex-start}
+  .book .extra em{font-size:12px}
+  .book .extra input{width:18px;height:18px;margin-top:2px}
+  .total b{font-size:22px}
+  .btn--block{padding:18px}
+  .cal{max-width:100%;padding:12px}
+  .cal__g button{padding:10px 0}
+  .attrs{gap:10px 16px}
+  dialog{padding:22px 18px}
+  dialog p{flex-direction:column;gap:0;margin:8px 0}
+}
+@media (max-width:380px){
+  .row2:first-of-type{grid-template-columns:1fr}  /* fechas una debajo de otra en pantallas muy estrechas */
+}
+ 
+/* ---- Barra superior y cabecera en móvil ---- */
+@media (max-width:620px){
+  .topbar{font-size:12px}
+  .topbar__in{justify-content:center;gap:4px 18px;padding-top:8px;padding-bottom:8px}
+  .topbar__addr{display:none}
+  .header__in{padding-top:12px;padding-bottom:12px;gap:12px}
+  .logo{font-size:22px;letter-spacing:.16em}
+  .logo small{font-size:7px;margin-top:4px}
+  .header__cta{font-size:11px;padding:10px 14px;letter-spacing:.1em}
+  .nav a{padding:16px}
+  .hero{min-height:240px;padding:0 16px}
+}
+ 

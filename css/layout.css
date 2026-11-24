@@ -1,0 +1,27 @@
+/* Barra superior, cabecera, hero, footer */
+.topbar{background:var(--coal);color:#cfc8bf;font-size:13px;border-bottom:1px solid #333}
+.topbar__in{display:flex;gap:32px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.header{background:var(--coal);position:sticky;top:0;z-index:20}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;padding-top:18px;padding-bottom:18px}
+.logo{font-family:var(--serif);font-size:30px;letter-spacing:.22em;color:#fff;display:inline-flex;flex-direction:column;align-items:center;line-height:1}
+.logo small{font-size:8px;letter-spacing:.4em;color:var(--bronze);margin-top:6px}
+.nav{display:flex;gap:34px;flex:1;justify-content:center}
+.header__cta{white-space:nowrap}
+.burger{display:none;width:44px;height:44px;border:1px solid #444;background:transparent;cursor:pointer;padding:0;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger span{width:20px;height:2px;background:#fff;transition:transform .2s,opacity .2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav a{color:#fff;font-size:14px}.nav a:hover{color:var(--bronze)}
+.hero{min-height:340px;display:grid;place-items:center;text-align:center;color:#ddd;
+  background:linear-gradient(rgba(24,24,24,.72),rgba(24,24,24,.72)),url("../img/hab-513.jpg") center/cover,var(--coal)}
+.hero h1{color:#fff;font-size:clamp(40px,6vw,68px);display:inline-block;padding-bottom:10px;border-bottom:1px solid var(--bronze)}
+.hero p{max-width:560px;margin:18px auto 0}
+.crumbs{font-size:13px}
+.footer{background:var(--coal);color:#bdb6ac;margin-top:90px;padding-top:70px;text-align:center}
+.footer h4{color:#fff;font-size:24px}
+.footer__grid{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:30px;padding-bottom:60px}
+.footer__copy{border-top:1px solid #2c2c2c;margin:0;padding:26px;font-size:13px}
+.totop{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border:0;background:var(--bronze);color:#fff;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
+.totop.show{opacity:1;pointer-events:auto}
+ 

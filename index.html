@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Santiago · Habitaciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- Barra superior -->
+<div class="topbar"><div class="container topbar__in">
+  <span class="topbar__addr">📍 Santiago de Cuba, Cuba</span><span>✆ +53 22 686 000</span><span>✉ reservas@hotelsantiago.com</span>
+</div></div>
+ 
+<!-- Cabecera -->
+<header class="header" id="header">
+  <div class="container header__in">
+    <a href="#/" class="logo">SANTIAGO<small>★ ★ ★ ★ ★</small></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#/">Inicio</a><a href="#/">Habitaciones</a><a href="#footer">Contacto</a>
+    </nav>
+    <a href="#/" class="btn btn--ghost header__cta">Reservar</a>
+  </div>
+</header>
+ 
+<!-- Hero (solo en catálogo) -->
+<section class="hero" id="hero">
+  <div class="hero__txt">
+    <h1>Nuestras Habitaciones</h1>
+    <p>Elegancia y confort en cada detalle. Elige tu habitación y cotiza al instante.</p>
+    <p class="crumbs">Inicio › Habitaciones</p>
+  </div>
+</section>
+ 
+<main class="container" id="app" aria-live="polite"></main>
+ 
+<footer class="footer" id="footer">
+  <div class="container footer__grid">
+    <div><h4>Ubicación</h4><p>Av. Las Américas y M<br>Santiago de Cuba</p></div>
+    <div class="footer__brand"><span class="logo">SANTIAGO<small>★ ★ ★ ★ ★</small></span></div>
+    <div><h4>Contacto</h4><p>T. +53 22 686 000<br>M. reservas@hotelsantiago.com</p></div>
+  </div>
+  <p class="footer__copy">© Hotel Santiago · Tarifas de referencia de Holiplus</p>
+</footer>
+ 
+<button class="totop" id="toTop" aria-label="Volver arriba">︿</button>
+ 
+<!-- Resumen de reserva -->
+<dialog id="dlg"><div id="dlgBody"></div><button class="btn" id="dlgClose">Cerrar</button></dialog>
+ 
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+ 

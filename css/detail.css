@@ -1,0 +1,50 @@
+/* Vista 2: detalle + panel de reserva + calendario */
+.gallery{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 -24px;height:420px;background:var(--coal)}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery__nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:60px;border:0;background:var(--bronze);color:#fff;cursor:pointer;font-size:20px}
+.gallery__nav--p{left:0}.gallery__nav--n{right:0}
+.detail{display:grid;grid-template-columns:1fr 420px;gap:60px;margin-top:70px;align-items:start}
+.detail h1{font-size:48px}
+.attrs{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;margin-bottom:18px}
+.detail h3{font-size:28px;margin-top:40px}
+.amen{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.amen span{display:flex;gap:10px;align-items:center}
+.ticks{list-style:none;padding:0;margin:0}
+.ticks li::before{content:"✓";color:var(--bronze);margin-right:8px;font-weight:700}
+.plans{width:100%;border-collapse:collapse;font-size:14px}
+.plans td{padding:8px 0;border-bottom:1px solid var(--line)}
+.plans td:last-child{text-align:right;color:var(--bronze-d);font-weight:600}
+.book{background:var(--coal);color:#ddd;padding:34px;position:sticky;top:96px}
+.book h3{color:#fff;font-size:30px;margin:0}
+.book__head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px}
+.book__head b{color:#fff}
+.book label{display:block;font-size:13px;text-align:center;color:#fff;margin-bottom:6px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.book input[type=date],.book select{width:100%;background:transparent;border:1px solid #666;color:#fff;padding:10px;text-align:center;color-scheme:dark}
+.book select option{color:#222}
+.step{display:flex;justify-content:center;align-items:center;gap:12px;color:#fff}
+.step button{width:30px;height:30px;border-radius:50%;border:0;background:var(--bronze);color:#fff;cursor:pointer;font-size:16px}
+.book h4{color:#fff;font-size:24px;margin:26px 0 12px}
+/* .book .extra gana en especificidad a ".book label" (que lo centraba y lo hacía block) */
+.book .extra{display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-size:13px;color:#ddd;margin:0;padding:7px 0;cursor:pointer}
+.extra span{display:flex;align-items:center;gap:10px}
+.extra em{font-style:normal;color:var(--bronze);white-space:nowrap}
+.extra input{accent-color:var(--bronze);margin:0;flex:none}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:22px 0}
+.total h4{margin:0}.total b{font-size:26px;color:#fff;font-family:var(--serif)}
+.note{font-size:12px;text-align:center;color:#999;margin:-8px 0 14px}
+.cal{border:1px solid var(--line);padding:16px;max-width:360px}
+.cal__top{display:flex;justify-content:space-between;align-items:center;color:var(--ink);font-weight:600;margin-bottom:8px}
+.cal__top button{border:0;background:none;cursor:pointer;font-size:18px;color:var(--bronze)}
+.cal__g{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:13px}
+.cal__g b{color:var(--ink);padding:6px 0}
+.cal__g button{border:0;background:none;padding:8px 0;cursor:pointer;color:var(--ink)}
+.cal__g button:disabled{color:#bbb;cursor:default}
+.cal__g .in{background:#ead9c4}.cal__g .edge{background:var(--bronze);color:#fff}
+.more{text-align:center;margin-top:90px}
+.more h2{font-size:48px}
+.more .grid .card{border-radius:50% 50% 0 0/38% 38% 0 0}
+dialog{border:0;padding:32px;max-width:420px;width:90%}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog h3{font-size:28px}
+dialog p{margin:6px 0;display:flex;justify-content:space-between}
